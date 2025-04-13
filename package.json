@@ -1,0 +1,34 @@
+{
+  "name": "usecontext-intermediate",
+  "version": "1.0.0",
+  "description": "A collection of intermediate-level React projects to master the useContext hook with real-world use cases like shopping carts, user settings, and task managers.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Espadv69/useContext-Intermediate.git"
+  },
+  "workspaces": [
+    "shoppingCart-Context",
+    "UserSettings-Context",
+    "TaskManager-Context"
+  ],
+  "keywords": [
+    "React",
+    "useContext",
+    "Intermediate",
+    "Projects",
+    "Shopping Cart",
+    "User Settings",
+    "Task Manager"
+  ],
+  "author": "AitorDev",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Espadv69/useContext-Intermediate/issues"
+  },
+  "homepage": "https://github.com/Espadv69/useContext-Intermediate#readme"
+}
