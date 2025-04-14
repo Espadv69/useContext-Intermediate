@@ -5,3 +5,11 @@ import { ADD_ITEM, REMOVE_ITEM, CLEAR_CART } from './cartTypes'
 const CartContext = createContext()
 
 const initialCart = JSON.parse(localStorage.getItem('cart')) || []
+
+export const CartProvider = ({ children }) => {
+  const [cart, dispatch] = useReducer(cartReducer, initialCart)
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart))
+  }, [cart])
+}
