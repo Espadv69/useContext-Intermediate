@@ -9,6 +9,15 @@ const Cart = () => {
       .reduce((acc, item) => acc + item.price * item.quantity, 0)
       .toFixed(2)
   }
+
+  if (cart.length === 0) {
+    return (
+      <section className="cart">
+        <h2>Your Cart</h2>
+        <p>Your cart is empty.</p>
+      </section>
+    )
+  }
 }
 
 export default Cart
