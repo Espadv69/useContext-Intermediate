@@ -20,4 +20,8 @@ export const CartProvider = ({ children }) => {
   const removeItem = (id) => {
     dispatch({ type: REMOVE_ITEM, payload: id })
   }
+
+  const clearCart = () => {
+    dispatch({ type: CLEAR_CART })
+  }
 }
