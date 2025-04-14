@@ -22,5 +22,8 @@ export const cartReducer = (state, action) => {
             : item,
         )
         .filter((item) => item.quantity > 0)
+
+    case CLEAR_CART:
+      return []
   }
 }
