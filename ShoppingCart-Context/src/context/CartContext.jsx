@@ -12,4 +12,8 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
   }, [cart])
+
+  const addItem = (product) => {
+    dispatch({ type: ADD_ITEM, payload: product })
+  }
 }
