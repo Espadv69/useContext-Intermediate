@@ -5,4 +5,10 @@ export const products = [
     price: 99.99,
     image: 'https://via.placeholder.com/150',
   },
+  {
+    id: 2,
+    name: 'Smart Watch',
+    price: 149.99,
+    image: 'https://via.placeholder.com/150',
+  },
 ]
