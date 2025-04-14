@@ -10,6 +10,8 @@ export const cartReducer = (state, action) => {
             ? { ...item, quantity: item.quantity + 1 }
             : item,
         )
+      } else {
+        return [...state, { ...action.payload, quantity: 1 }]
       }
   }
 }
