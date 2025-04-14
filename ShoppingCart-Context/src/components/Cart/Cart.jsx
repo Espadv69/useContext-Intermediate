@@ -37,6 +37,15 @@ const Cart = () => {
           </li>
         ))}
       </ul>
+
+      <footer className="cart-footer">
+        <p>
+          Total: <strong>${getTotal()}</strong>
+        </p>
+        <button className="clear-cart__button" onClick={clearCart}>
+          Clear Cart
+        </button>
+      </footer>
     </section>
   )
 }
