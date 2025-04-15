@@ -15,6 +15,6 @@ export const products = [
     id: 3,
     name: 'Gaming Mouse',
     price: 49.99,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://thumb.pccomponentes.com/w-530-530/articles/33/338236/154-energy-sistem-gaming-mouse-esg-m5-triforce-raton-gaming-rgb-10000-dpi.jpg',
   },
 ]
