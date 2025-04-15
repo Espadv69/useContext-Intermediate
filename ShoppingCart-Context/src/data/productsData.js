@@ -9,7 +9,7 @@ export const products = [
     id: 2,
     name: 'Smart Watch',
     price: 149.99,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://thumb.pccomponentes.com/w-530-530/articles/1085/10856558/120-xiaomi-redmi-watch-5-active-reloj-smartwatch-negro-medianoche.jpg',
   },
   {
     id: 3,
