@@ -1,0 +1,16 @@
+.app {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .app {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
