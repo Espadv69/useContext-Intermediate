@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     name: 'Wireless Headphones',
     price: 99.99,
-    image: 'https://via.placeholder.com/150',
+    image: 'https://thumb.pccomponentes.com/w-530-530/articles/1085/10855510/1930-microsoft-xbox-wireless-headset-20-auriculares-inalambricos-gaming-negros-caracteristicas.jpg',
   },
   {
     id: 2,
