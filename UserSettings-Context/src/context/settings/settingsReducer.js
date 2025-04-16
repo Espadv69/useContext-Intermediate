@@ -7,5 +7,11 @@ export const settingsReducer = (state, action) => {
         ...state,
         theme: state.theme === 'light' ? 'dark' : 'light',
       }
+
+    case SET_LANGUAGE:
+      return {
+        ...state,
+        language: action.payload,
+      }
   }
 }
