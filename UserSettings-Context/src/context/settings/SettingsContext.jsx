@@ -11,4 +11,8 @@ const initialState = {
 
 export const SettingsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(settingsReducer, initialState)
+
+  const toggleTheme = () => {
+    dispatch({ type: TOGGLE_THEME })
+  }
 }
