@@ -13,5 +13,8 @@ export const settingsReducer = (state, action) => {
         ...state,
         language: action.payload,
       }
+
+    default:
+      return state
   }
 }
