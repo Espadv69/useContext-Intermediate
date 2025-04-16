@@ -19,4 +19,10 @@ export const SettingsProvider = ({ children }) => {
   const setLanguage = (lang) => {
     dispatch({ type: SET_LANGUAGE, payload: lang })
   }
+
+  return (
+    <SettingsContext.Provider value={{ state, toggleTheme, setLanguage }}>
+      {children}
+    </SettingsContext.Provider>
+  )
 }
