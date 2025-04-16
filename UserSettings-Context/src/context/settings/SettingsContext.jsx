@@ -15,4 +15,8 @@ export const SettingsProvider = ({ children }) => {
   const toggleTheme = () => {
     dispatch({ type: TOGGLE_THEME })
   }
+
+  const setLanguage = (lang) => {
+    dispatch({ type: SET_LANGUAGE, payload: lang })
+  }
 }
