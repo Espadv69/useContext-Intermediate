@@ -8,3 +8,7 @@ const initialState = {
   theme: 'light',
   language: 'en',
 }
+
+export const SettingsProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(settingsReducer, initialState)
+}
