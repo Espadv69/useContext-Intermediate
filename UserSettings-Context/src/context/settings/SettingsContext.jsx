@@ -26,3 +26,11 @@ export const SettingsProvider = ({ children }) => {
     </SettingsContext.Provider>
   )
 }
+
+export const useSettings = () => {
+  const context = useContext(SettingsContext)
+  if (!context) {
+    throw new Error('useSettings must be used within a SettingsProvider')
+  }
+  return context
+}
