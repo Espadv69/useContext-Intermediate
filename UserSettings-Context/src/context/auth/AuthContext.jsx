@@ -19,4 +19,10 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     dispatch({ type: LOGOUT })
   }
+
+  return (
+    <AuthContext.Provider value={{ state, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  )
 }
