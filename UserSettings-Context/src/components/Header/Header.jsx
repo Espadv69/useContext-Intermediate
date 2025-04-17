@@ -6,8 +6,10 @@ const Header = () => {
   const { theme, language, toggleTheme } = useSettings()
   const { isAuthenticated, user, logout } = useAuth()
 
+  console.log('Curent Theme: ', theme)
+
   return (
-    <header className={`header ${theme}`}>
+    <header className={`header ${theme || 'light'}`}>
       <div className="header-content">
         <h1 className="header-title">User Settings</h1>
 
