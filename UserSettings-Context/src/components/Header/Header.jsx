@@ -9,17 +9,25 @@ const Header = () => {
   return (
     <header className={`header ${theme}`}>
       <div className="header-content">
-        <h1>User Settings</h1>
+        <h1 className="header-title">User Settings</h1>
 
         <div className="header-info">
-          {isAuthenticated && <p>Welcome, {user.name}!</p>}
-          <p>Language: {language}</p>
-          <p>Theme: {theme}</p>
+          {isAuthenticated && (
+            <p className="header-welcome">Welcome, {user.name}!</p>
+          )}
+          <p className="header-language">Language: {language}</p>
+          <p className="header-theme">Theme: {theme}</p>
         </div>
 
         <div className="header-actions">
-          <button onClick={toggleTheme}>Toggle Theme</button>
-          {isAuthenticated && <button onClick={logout}>Logout</button>}
+          <button className="header-toggle__btn" onClick={toggleTheme}>
+            Toggle Theme
+          </button>
+          {isAuthenticated && (
+            <button className="header-logout__btn" onClick={logout}>
+              Logout
+            </button>
+          )}
         </div>
       </div>
     </header>
