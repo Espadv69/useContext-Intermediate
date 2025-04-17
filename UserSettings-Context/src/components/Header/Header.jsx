@@ -16,6 +16,11 @@ const Header = () => {
           <p>Language: {language}</p>
           <p>Theme: {theme}</p>
         </div>
+
+        <div className="header-actions">
+          <button onClick={toggleTheme}>Toggle Theme</button>
+          {isAuthenticated && <button onClick={logout}>Logout</button>}
+        </div>
       </div>
     </header>
   )
