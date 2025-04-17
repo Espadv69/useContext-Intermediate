@@ -10,6 +10,12 @@ const Header = () => {
     <header className={`header ${theme}`}>
       <div className="header-content">
         <h1>User Settings</h1>
+
+        <div className="header-info">
+          {isAuthenticated && <p>Welcome, {user.name}!</p>}
+          <p>Language: {language}</p>
+          <p>Theme: {theme}</p>
+        </div>
       </div>
     </header>
   )
