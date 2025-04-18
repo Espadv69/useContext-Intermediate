@@ -4,6 +4,7 @@ import './SettingsPanel.css'
 
 const SettingsPanel = () => {
   const { language, setLanguage } = useSettings()
+  const { isAuthenticated, login } = useAuth()
 }
 
 export default SettingsPanel
