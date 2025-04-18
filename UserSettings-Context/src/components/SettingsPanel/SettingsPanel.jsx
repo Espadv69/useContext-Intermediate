@@ -22,6 +22,16 @@ const SettingsPanel = () => {
           <option value="fr">Français</option>
         </select>
       </div>
+
+      <div className="auth-section">
+        {isAuthenticated ? (
+          <p className="auth-message">You are logged in.</p>
+        ) : (
+          <button className="login-btn" onClick={login}>
+            Login
+          </button>
+        )}
+      </div>
     </section>
   )
 }
