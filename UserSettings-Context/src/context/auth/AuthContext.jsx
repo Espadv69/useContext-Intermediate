@@ -12,8 +12,9 @@ const initialState = {
 export const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState)
 
-  const login = (user) => {
-    dispatch({ type: LOGIN, payload: user })
+  const login = () => {
+    const mockUser = { name: 'AitorDev' }
+    dispatch({ type: LOGIN, payload: mockUser })
   }
 
   const logout = () => {
