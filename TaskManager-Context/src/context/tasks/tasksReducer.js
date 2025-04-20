@@ -14,5 +14,8 @@ export const tasksReducer = (state, action) => {
           ? { ...task, completed: !task.completed }
           : task,
       )
+
+    default:
+      return state
   }
 }
