@@ -16,4 +16,8 @@ export const TasksProvider = ({ children }) => {
   const removeTask = (id) => {
     dispatch({ type: REMOVE_TASK, payload: id })
   }
+
+  const toggleTask = (id) => {
+    dispatch({ type: TOGGLE_TASK, payload: id })
+  }
 }
