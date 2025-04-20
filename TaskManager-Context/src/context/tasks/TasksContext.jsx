@@ -20,4 +20,12 @@ export const TasksProvider = ({ children }) => {
   const toggleTask = (id) => {
     dispatch({ type: TOGGLE_TASK, payload: id })
   }
+
+  return (
+    <TasksContext.Provider
+      value={{ ...tasks, addTask, removeTask, toggleTask }}
+    >
+      {children}
+    </TasksContext.Provider>
+  )
 }
