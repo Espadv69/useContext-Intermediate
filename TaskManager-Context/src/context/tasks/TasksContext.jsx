@@ -8,4 +8,8 @@ const initialTasks = []
 
 export const TasksProvider = ({ children }) => {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks)
+
+  const addTask = (task) => {
+    dispatch({ type: ADD_TASK, payload: task })
+  }
 }
